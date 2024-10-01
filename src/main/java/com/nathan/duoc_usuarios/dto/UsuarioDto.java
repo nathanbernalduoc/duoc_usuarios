@@ -1,5 +1,7 @@
 package com.nathan.duoc_usuarios.dto;
 
+import org.springframework.hateoas.RepresentationModel;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,8 +12,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "US_USUARIO")
-
-public class UsuarioDto {
+public class UsuarioDto extends RepresentationModel<UsuarioDto> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "rol_secuence")

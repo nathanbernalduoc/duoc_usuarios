@@ -26,6 +26,18 @@ public class UsuarioServicelmpl implements UsuarioService {
     }
 
     @Override
+    public Optional<UsuarioDto> getUsuarioByAlias(String alias) {
+        List<UsuarioDto> usuarios = usuarioRepository.findAll();
+        Optional<UsuarioDto> usuarioSel = null;
+        for(UsuarioDto usuario: usuarios) {
+            if (usuario.getAlias().equals(alias)) {
+                usuarioSel = Optional.of(usuario);
+            }
+        }
+        return usuarioSel;
+    }
+
+    @Override
     public UsuarioDto createUsuario(UsuarioDto usuario) {
         return usuarioRepository.save(usuario);
     }
