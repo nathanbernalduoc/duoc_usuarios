@@ -1,7 +1,7 @@
 version: '1'
 services:
   duoc_usuarios:
-    buld:
+    build:
       context: .
       dockerfile: Dockerfile
     ports:
