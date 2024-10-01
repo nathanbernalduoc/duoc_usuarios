@@ -69,7 +69,7 @@ public class UsuarioController {
 
     }
 
-    @GetMapping({"/alias/{alias}"})
+    @GetMapping("/alias/{alias}")
     public EntityModel<UsuarioDto> getUsuarioAlias(@PathVariable String alias) {
 
         Optional<UsuarioDto> usuario = usuarioService.getUsuarioByAlias(alias);
