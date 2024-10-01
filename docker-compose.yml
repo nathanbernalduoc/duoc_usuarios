@@ -1,0 +1,13 @@
+version: '1'
+services:
+  duoc_usuarios:
+    buld:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    environment:
+      - spring.datasource.url=jdbc:oracle:thin:@hkh8nor6id4iu8l4_tp?TNS_ADMIN=/app/oracle_wallet
+      - spring.datasource.username=USUARIOS
+      - spring.datasource.password=Duoc$2024.#0211
+    restart: always
