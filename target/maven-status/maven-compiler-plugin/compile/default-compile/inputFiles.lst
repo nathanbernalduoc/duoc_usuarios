@@ -1,0 +1,8 @@
+/Users/jonathanbernal/Documents/Duoc/FullStack/Week9/duoc_usuarios/src/main/java/com/nathan/duoc_usuarios/DuocUsuariosApplication.java
+/Users/jonathanbernal/Documents/Duoc/FullStack/Week9/duoc_usuarios/src/main/java/com/nathan/duoc_usuarios/controllers/UsuarioController.java
+/Users/jonathanbernal/Documents/Duoc/FullStack/Week9/duoc_usuarios/src/main/java/com/nathan/duoc_usuarios/controllers/UsuarioNotFoundExcepcion.java
+/Users/jonathanbernal/Documents/Duoc/FullStack/Week9/duoc_usuarios/src/main/java/com/nathan/duoc_usuarios/dto/LoginDto.java
+/Users/jonathanbernal/Documents/Duoc/FullStack/Week9/duoc_usuarios/src/main/java/com/nathan/duoc_usuarios/dto/UsuarioDto.java
+/Users/jonathanbernal/Documents/Duoc/FullStack/Week9/duoc_usuarios/src/main/java/com/nathan/duoc_usuarios/repository/UsuarioRepository.java
+/Users/jonathanbernal/Documents/Duoc/FullStack/Week9/duoc_usuarios/src/main/java/com/nathan/duoc_usuarios/service/UsuarioService.java
+/Users/jonathanbernal/Documents/Duoc/FullStack/Week9/duoc_usuarios/src/main/java/com/nathan/duoc_usuarios/service/UsuarioServicelmpl.java
