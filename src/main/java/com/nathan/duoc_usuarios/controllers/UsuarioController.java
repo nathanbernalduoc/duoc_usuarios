@@ -33,10 +33,17 @@ public class UsuarioController {
     public CollectionModel<EntityModel<UsuarioDto>> getAllUsuarios() {
 
         List<UsuarioDto> usuarios = usuarioService.getAllUsuarios();
-        List<EntityModel<UsuarioDto>> usuarioResource = usuarios.stream()
-            .map(usuario -> EntityModel.of(usuario,
-                WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).getUsuarioById(usuario.getId())).withSelfRel()
-                ))
+        List<EntityModel<UsuarioDto>> usuarioResource = 
+            usuarios.stream().map(
+                usuario -> EntityModel.of(
+                    usuario,
+                    WebMvcLinkBuilder.linkTo(
+                        WebMvcLinkBuilder.methodOn(
+                            this.getClass()
+                        ).getUsuarioById(usuario.getId())
+                    ).withSelfRel()
+                )
+            )
             .collect(Collectors.toList());
 
         WebMvcLinkBuilder linkTo = WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).getAllUsuarios());
