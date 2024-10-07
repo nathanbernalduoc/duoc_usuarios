@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.nathan.duoc_usuarios.repository.UsuasrioRepositoryTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.204 s -- in com.nathan.duoc_usuarios.repository.UsuasrioRepositoryTest
